@@ -173,7 +173,14 @@
     border-radius: 12px;
     padding: 26px;
   }
-  .bio-card h3{ font-size: 1.1rem; margin-bottom: 12px; }
+  .bio-card h3{ font-size: 1.1rem; margin-bottom: 12px; display:flex; align-items:center; gap: 10px; }
+  .bio-card h3 img{ width: 22px; height: 22px; object-fit: contain; }
+  .bio-card h3 .icon-badge{
+    width: 24px; height: 24px; border-radius: 6px;
+    display:flex; align-items:center; justify-content:center;
+    background: #9147FF22; flex-shrink: 0;
+  }
+  .bio-card h3 .icon-badge svg{ width: 15px; height: 15px; color: #b083ff; }
   .bio-card p{ color: var(--text-dim); font-size: 0.95rem; }
   .bio-card a.inline-link{ color: var(--blue-light); border-bottom: 1px solid transparent; }
   .bio-card a.inline-link:hover{ border-bottom-color: var(--blue-light); }
@@ -297,12 +304,16 @@
       </div>
       <div class="bio-cards">
         <div class="bio-card">
-          <h3>🎮 Gaming</h3>
+          <h3><img src="assets/xbox-controller.png" alt="Manette"> Gaming</h3>
           <p>Passionnée de jeux vidéo depuis ma tendre enfance, je suis un joueur qui adore la coopération tout en explorant de temps à autre des jeux en solo. Je me suis lancé dans le streaming sur <a class="inline-link" href="https://www.twitch.tv/arcontis_" target="_blank" rel="noopener">Twitch</a> depuis fin 2019 pour vous partager mon contenu.</p>
         </div>
         <div class="bio-card">
-          <h3>👥 Irl</h3>
-          <p>Ostréiculteur pendant 4 ans dans le sud, aujourd'hui en logistique dans la chimie depuis 5-6 ans. La musique tourne quasiment tous les jours, live ou pas.</p>
+          <h3><span class="icon-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.29 2 3 5.14v14.29h4.86V22h2.57l2.57-2.57h3.86L21.43 15V2H4.29Zm15.43 12.14-2.58 2.57h-4.29l-2.57 2.57v-2.57H6V3.71h13.71v10.43Z"/><path d="M17.14 6.57h-1.71v5.14h1.71V6.57ZM12.57 6.57h-1.72v5.14h1.72V6.57Z"/></svg></span> Twitch</h3>
+          <p>Streamer sur ma propre chaîne <a class="inline-link" href="https://www.twitch.tv/arcontis_" target="_blank" rel="noopener">Twitch</a> depuis fin 2019, où je partage mes sessions de jeu en direct avec la communauté.</p>
+        </div>
+        <div class="bio-card">
+          <h3><img src="assets/erance-logo-light.png" alt="Logo Erance"> Communauté - Erance</h3>
+          <p>Erance est un serveur basée sur du multi-gaming et à la fois communautaire, c'est un lieu qui permet à chacun de pouvoir autant discuter que de jouer aux jeux vidéo. Le but est de partager avec les membres du serveur des centres d'intérêt communs et une même passion.</p>
         </div>
       </div>
     </div>
